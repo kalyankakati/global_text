@@ -1,11 +1,6 @@
 import streamlit as st
 from langchain import PromptTemplate
-from langchain_community import llms 
-#from langchain.llms import OpenAI
-#from langchain_core.prompts import PromptTemplate
-#from langchain import PromptTemplate
-#from langchain.llms import OpenAI
-#from langchain_openai import OpenAI
+from langchain.llms import OpenAI
 
 template = """
     Below is an email that may be poorly worded.
@@ -59,7 +54,6 @@ with col1:
                 [@GregKamradt](https://twitter.com/GregKamradt). \n\n View Source Code on [Github](https://github.com/gkamradt/globalize-text-streamlit/blob/main/main.py)")
 
 with col2:
-    #st.image(image='C:\\Users\\kalya\\development\\projects\\ai\\langchain\\data\\TweetScreenshot.png', width=500, caption='https://twitter.com/DannyRichman/status/1598254671591723008')
     st.image(image='TweetScreenshot.png', width=500, caption='https://twitter.com/DannyRichman/status/1598254671591723008')
 
 st.markdown("## Enter Your Email To Convert")
